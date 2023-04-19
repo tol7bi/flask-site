@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Цитаты
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Цитатник</h1>
+    <p>Эта страница генерирует цитаты об исскуственном интелекте</p>
+    <form action="/quotes" method="GET">
+        <button name="generate" type="submit" value="generate" class="btn btn-warning">Генерируем</button>
+    </form>
+    <p style="margin-top: 20px !important;">{{quot}}</p>
+</div>
+{% endblock %}
